@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_ER_EVA_7_MORE_ACTIONS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="como-cepillar-a-un-perro-de-pelo-corto.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="aLW-2x-7Am">
+                                <rect key="frame" x="186" y="36" width="228" height="146"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="228" id="AVp-PS-360"/>
+                                    <constraint firstAttribute="width" constant="228" id="WgH-xe-hVC"/>
+                                    <constraint firstAttribute="height" constant="146" id="yeS-sC-fWD"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="146" id="zRG-vs-Ovd"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NF3-hC-B00">
+                                <rect key="frame" x="20" y="249" width="67" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="I3b-KT-Fxe">
+                                <rect key="frame" x="95" y="245" width="485" height="30"/>
+                                <color key="backgroundColor" red="0.50897863700000001" green="0.88427567799999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.99556785821914673" green="0.006963520310819149" blue="0.12686184048652649" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="textFieldDoneEditing:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="667-4L-GlW"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6eK-Kb-qPH">
+                                <rect key="frame" x="95" y="305" width="485" height="30"/>
+                                <color key="backgroundColor" red="0.50897863700000001" green="0.88427567799999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.99556785821914673" green="0.006963520310819149" blue="0.12686184048652649" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <connections>
+                                    <action selector="textFieldDoneEditing:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="5ZF-mH-zWi"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Edad:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BgO-a3-3dQ">
+                                <rect key="frame" x="20" y="308" width="67" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dRE-M0-Dcv">
+                                <rect key="frame" x="282" y="343" width="36" height="30"/>
+                                <state key="normal" title="Send"/>
+                                <connections>
+                                    <action selector="btnOk:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Omd-ej-5Am"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SqW-kw-uqG">
+                                <rect key="frame" x="20" y="399" width="560" height="21"/>
+                                <color key="backgroundColor" red="0.50897863700000001" green="0.88427567799999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Epx-hC-HAs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="SqW-kw-uqG" firstAttribute="trailing" secondItem="6eK-Kb-qPH" secondAttribute="trailing" id="0oz-Hz-w85"/>
+                            <constraint firstItem="dRE-M0-Dcv" firstAttribute="top" secondItem="6eK-Kb-qPH" secondAttribute="bottom" constant="8" symbolic="YES" id="1YE-th-OtW"/>
+                            <constraint firstItem="dRE-M0-Dcv" firstAttribute="centerX" secondItem="SqW-kw-uqG" secondAttribute="centerX" id="A6F-XF-rt1"/>
+                            <constraint firstItem="BgO-a3-3dQ" firstAttribute="width" secondItem="NF3-hC-B00" secondAttribute="width" id="E8X-Fi-pav"/>
+                            <constraint firstItem="aLW-2x-7Am" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="H3Y-LA-caW"/>
+                            <constraint firstItem="I3b-KT-Fxe" firstAttribute="trailing" secondItem="6eK-Kb-qPH" secondAttribute="trailing" id="ILs-d2-iqh"/>
+                            <constraint firstItem="I3b-KT-Fxe" firstAttribute="top" secondItem="aLW-2x-7Am" secondAttribute="bottom" constant="71" id="J1a-Mq-BSg"/>
+                            <constraint firstItem="I3b-KT-Fxe" firstAttribute="leading" secondItem="6eK-Kb-qPH" secondAttribute="leading" id="Jjg-aK-uie"/>
+                            <constraint firstItem="NF3-hC-B00" firstAttribute="centerY" secondItem="I3b-KT-Fxe" secondAttribute="centerY" id="O6l-0L-GPx"/>
+                            <constraint firstItem="NF3-hC-B00" firstAttribute="leading" secondItem="BgO-a3-3dQ" secondAttribute="leading" id="Sgr-Pz-rqI"/>
+                            <constraint firstItem="NF3-hC-B00" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="XWZ-HD-DzW"/>
+                            <constraint firstItem="SqW-kw-uqG" firstAttribute="top" secondItem="dRE-M0-Dcv" secondAttribute="bottom" constant="26" id="ZSA-NI-zFe"/>
+                            <constraint firstItem="I3b-KT-Fxe" firstAttribute="leading" secondItem="NF3-hC-B00" secondAttribute="trailing" constant="8" symbolic="YES" id="bUZ-T0-MzI"/>
+                            <constraint firstItem="6eK-Kb-qPH" firstAttribute="top" secondItem="I3b-KT-Fxe" secondAttribute="bottom" constant="30" id="bVF-d4-UXT"/>
+                            <constraint firstItem="BgO-a3-3dQ" firstAttribute="baseline" secondItem="6eK-Kb-qPH" secondAttribute="baseline" id="e4t-DT-Gk5"/>
+                            <constraint firstItem="I3b-KT-Fxe" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="iTY-Ay-Zgu"/>
+                            <constraint firstItem="SqW-kw-uqG" firstAttribute="leading" secondItem="BgO-a3-3dQ" secondAttribute="leading" id="tYm-LJ-zmr"/>
+                            <constraint firstItem="aLW-2x-7Am" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="z58-HF-iad"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="Hwb-tk-sme" appends="YES" id="dun-z2-t6r"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="txtFldAll" destination="SqW-kw-uqG" id="HUz-ch-FND"/>
+                        <outlet property="txtFldEdad" destination="6eK-Kb-qPH" id="oJI-gG-pJj"/>
+                        <outlet property="txtFldNom" destination="I3b-KT-Fxe" id="Zhk-Xz-c1k"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Hwb-tk-sme">
+                    <connections>
+                        <action selector="onTapGestureRecognizer:" destination="BYZ-38-t0r" id="vZm-lb-D3q"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="305" y="418"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="como-cepillar-a-un-perro-de-pelo-corto.jpg" width="700" height="554"/>
+    </resources>
+</document>

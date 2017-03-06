@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_ER_EVA_5_ACTIONS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rmb-pY-oIx">
+                                <rect key="frame" x="283" y="540" width="49" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="myTouch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hK7-qZ-txR"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="afh-ed-fzm">
+                                <rect key="frame" x="32" y="134" width="548" height="30"/>
+                                <color key="backgroundColor" red="0.50897863700000001" green="0.88427567799999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PiL-cn-Bmd">
+                                <rect key="frame" x="32" y="287" width="548" height="25"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="rmb-pY-oIx" secondAttribute="bottom" constant="30" id="7kx-Zk-MH0"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="afh-ed-fzm" secondAttribute="trailing" id="MiA-Sv-iBV"/>
+                            <constraint firstItem="rmb-pY-oIx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SKg-7b-V30"/>
+                            <constraint firstItem="PiL-cn-Bmd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="12" id="Sia-3E-imP"/>
+                            <constraint firstItem="afh-ed-fzm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="12" id="mtu-AS-2U6"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="PiL-cn-Bmd" secondAttribute="bottom" constant="288" id="oTL-ll-IPP"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lblMensa" destination="PiL-cn-Bmd" id="EoO-oX-NvA"/>
+                        <outlet property="txtFldMensa" destination="afh-ed-fzm" id="j4d-hX-tZy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="440" y="418"/>
+        </scene>
+    </scenes>
+    <color key="tintColor" red="0.50897863700878831" green="0.88427567799788653" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+</document>
