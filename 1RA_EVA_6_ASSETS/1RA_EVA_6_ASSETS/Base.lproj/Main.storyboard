@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_RA_EVA_6_ASSETS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UuH-Bd-0SU">
+                                <rect key="frame" x="20" y="179" width="560" height="33"/>
+                                <state key="normal" title="Mi Boton" backgroundImage="button"/>
+                                <state key="highlighted" backgroundImage="moradobutton"/>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="plat1_logo" translatesAutoresizingMaskIntoConstraints="NO" id="5yb-1A-ewR">
+                                <rect key="frame" x="183" y="28" width="234" height="100"/>
+                            </imageView>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="GNP-sq-u1c">
+                                <rect key="frame" x="18" y="276" width="564" height="31"/>
+                                <connections>
+                                    <action selector="sliderValor:" destination="BYZ-38-t0r" eventType="valueChanged" id="RLb-er-Kzd"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rdb-ep-qXH">
+                                <rect key="frame" x="20" y="362" width="560" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="leadingMargin" secondItem="GNP-sq-u1c" secondAttribute="leading" id="2yo-rm-z79"/>
+                            <constraint firstItem="UuH-Bd-0SU" firstAttribute="top" secondItem="5yb-1A-ewR" secondAttribute="bottom" constant="51" id="AZy-Uf-xgq"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="Rdb-ep-qXH" secondAttribute="leading" id="LSw-SR-nPp"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="UuH-Bd-0SU" secondAttribute="trailing" id="a0E-NH-zff"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="GNP-sq-u1c" secondAttribute="trailing" id="cxl-bc-IOS"/>
+                            <constraint firstItem="5yb-1A-ewR" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="dlY-Y9-5Fz"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="UuH-Bd-0SU" secondAttribute="leading" id="g7C-Zz-YsZ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Rdb-ep-qXH" secondAttribute="trailing" id="gWR-Wd-PWG"/>
+                            <constraint firstItem="GNP-sq-u1c" firstAttribute="top" secondItem="UuH-Bd-0SU" secondAttribute="bottom" constant="64" id="k2u-ve-5Jf"/>
+                            <constraint firstItem="5yb-1A-ewR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="163" id="r4s-7q-pHN"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="5yb-1A-ewR" secondAttribute="trailing" constant="163" id="rs4-vf-qjE"/>
+                            <constraint firstItem="Rdb-ep-qXH" firstAttribute="top" secondItem="GNP-sq-u1c" secondAttribute="bottom" constant="56" id="vsJ-ko-FCd"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lblTexto" destination="Rdb-ep-qXH" id="Bmp-1A-G5k"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="352" y="439"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="button" width="33" height="33"/>
+        <image name="moradobutton" width="33" height="32"/>
+        <image name="plat1_logo" width="100" height="100"/>
+    </resources>
+</document>

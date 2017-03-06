@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_ER_EVA_PRACTICA_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="avengers_ironman_render_by_kernelpanicx-d5cxskw" translatesAutoresizingMaskIntoConstraints="NO" id="3uG-Ap-Imf">
+                                <rect key="frame" x="166" y="205" width="268" height="190"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="258" id="Sow-hi-bqw"/>
+                                    <constraint firstAttribute="width" constant="365" id="uFH-8G-CCn"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="UP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iar-z2-dfa">
+                                <rect key="frame" x="289" y="176" width="23" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="DOWN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RJO-wr-dJJ">
+                                <rect key="frame" x="274" y="403" width="53" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="LEFT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dcn-IX-Tfz">
+                                <rect key="frame" x="143" y="289" width="39" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="RIGHT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OBi-ol-hEM">
+                                <rect key="frame" x="421" y="289" width="50" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="iar-z2-dfa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4rX-5S-68H"/>
+                            <constraint firstItem="Dcn-IX-Tfz" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="GSs-4H-5pt"/>
+                            <constraint firstItem="3uG-Ap-Imf" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="HKz-2u-ODJ"/>
+                            <constraint firstItem="RJO-wr-dJJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="INz-Sr-Wf5"/>
+                            <constraint firstItem="3uG-Ap-Imf" firstAttribute="leading" secondItem="Dcn-IX-Tfz" secondAttribute="trailing" constant="-6" id="Kub-0x-U7O"/>
+                            <constraint firstItem="3uG-Ap-Imf" firstAttribute="top" secondItem="iar-z2-dfa" secondAttribute="bottom" constant="8" id="Kzd-Ov-PyK"/>
+                            <constraint firstItem="OBi-ol-hEM" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="OAX-Vc-UOy"/>
+                            <constraint firstItem="3uG-Ap-Imf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ahQ-O7-OkP"/>
+                            <constraint firstItem="RJO-wr-dJJ" firstAttribute="top" secondItem="3uG-Ap-Imf" secondAttribute="bottom" constant="19" id="eeF-OQ-gKq"/>
+                            <constraint firstItem="OBi-ol-hEM" firstAttribute="leading" secondItem="3uG-Ap-Imf" secondAttribute="trailing" id="rtt-yO-uLn"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="418"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="avengers_ironman_render_by_kernelpanicx-d5cxskw" width="900" height="673"/>
+    </resources>
+</document>
